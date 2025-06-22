@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+.main-container {
+	font-family: 'Lato';
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ck-content {
+	font-family: 'Lato';
+	line-height: 1.6;
+	word-break: break-word;
+}
+
+.editor-container_include-block-toolbar {
+	/* margin-left: 42px;
+	margin-right: 42px; */
+}
+
+.editor-container_balloon-editor .editor-container__editor {
+	/* min-width: 795px;
+	max-width: 795px; */
+}
+
+
+
+.ck-content h1 {
+  font-size: 1.875rem;  /* Tailwind: text-3xl */
+  font-weight: bold;
+}
+
+.ck-content h2 {
+  font-size: 1.5rem;    /* text-2xl */
+  font-weight: bold;
+}
+
+.ck-content h3 {
+  font-size: 1.25rem;   /* text-xl */
+  font-weight: bold;
+}
+
+.ck-content h4 {
+  font-size: 1.125rem;  /* text-lg */
+  font-weight: bold;
+}
+
+.ck-content h5 {
+  font-size: 1rem;      /* text-base */
+  font-weight: bold;
+}
+
+.ck-content h6 {
+  font-size: 0.875rem;  /* text-sm */
+  font-weight: bold;
+}.ck-buttor{
+	color: white;
+}
