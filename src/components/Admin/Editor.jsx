@@ -81,9 +81,7 @@ export default function Editor() {
 	const [isLayoutReady, setIsLayoutReady] = useState(false);
 	const {setBlog,blog,currBlog,setCurrBlog,editIndex}=data()
 	const onEdit=(info,editor)=>{
-		if (editIndex>=0) {
-			console.log(editIndex);
-			
+		if (editIndex>=0) {			
 			setCurrBlog({...currBlog,data:editor.getData()})
 		}else{
 		setBlog({...blog,data:editor.getData()});

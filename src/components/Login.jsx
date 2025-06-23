@@ -32,9 +32,8 @@ function Login() {
       );
         
       
-      
-      console.log(verified);
 
+      
       if (user[0]?.email && verified) {
         setIsLogin(true);
         setCurrentUser({ ...user[0] });

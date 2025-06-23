@@ -10,9 +10,7 @@ function GoogleLoginBtn() {
   const [userDetails,setUserDetails]=useState({});
   const navigate=useNavigate()
   const onSucces=(response)=>{
-      console.log(response);
        let userDetail= jwtDecode(response.credential)
-       console.log(userDetail);
        
        let  user=loginDetails.find((v)=>{
             return v.email==userDetail.email
@@ -26,7 +24,6 @@ function GoogleLoginBtn() {
       }else{
         const user={email:userDetail.email,name:userDetail.given_name,surname:userDetail.family_name,id:uuidv4(),loggedInBy:"google"}
         setUserDetails({...user});
-        console.log(user);
         
         setShowModal(true);
       }

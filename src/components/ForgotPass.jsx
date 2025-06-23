@@ -60,7 +60,6 @@ function ForgotPass() {
 
     const onChangePassword=async()=>{
         if(passwords.password.length<8){
-            // console.log();
             
             alert("Password's length must be of atleast 8 characters ")
         }else if (isPassSame && passwords.password==passwords.confirmPassword) {

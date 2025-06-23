@@ -11,12 +11,10 @@ function EditingPage() {
     const [showModal,setShowModal]=useState(false)
     const {blog,setBlog,setBlogs,blogs,currBlog,setCurrBlog,editIndex,setEditIndex,currentUser,setCurrentUser}=data();
     const onInput=(e,field)=>{
-        // console.log(e.target.value);
-        // console.log(blog);
+       
         if (editIndex>=0) {
             setCurrBlog({...currBlog,[field]:e.target.value,})
         }else{
-            console.log(e.target.value);
             
         setBlog({...blog,[field]:e.target.value})
         }
@@ -33,8 +31,7 @@ function EditingPage() {
         setShowModal(!showModal);
     }
     const onSubmit=()=>{
-        console.log(blog);
-        // console.log(currBlog);
+     
         if (editIndex>=0) {
             if(currBlog.title && currBlog.category){
             
@@ -65,7 +62,6 @@ function EditingPage() {
     const onBtnClick=()=>{
             
             if (blog?.data || currBlog?.data) {
-                console.log(blog,currBlog);
                 toggle()
             }else{
                 alert("no changes in Editor")

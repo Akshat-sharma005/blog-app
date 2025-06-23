@@ -17,13 +17,11 @@ function Signup() {
     },[])
 
     const oninput=async(e,field)=>{
-                console.log(e.target.value);
 
         setNewUser({...newUser,[field]:e.target.value})
         
         if (field=="password") {
            const pass= await hashPassword(e.target.value)
-           console.log(pass);
          setNewUser({...newUser,[field]:pass})
          setPassword(e.target.value);
           

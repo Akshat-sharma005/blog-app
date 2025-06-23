@@ -17,12 +17,9 @@ const [deleteId,setDeleteId]=useState(null)
 const [category,setCategory]=useState("travel");
 
 const [categorisedBlog,setCategorisedBlog]=useState([])
-// console.log(categorisedBlog);
 
 const navigate=useNavigate()
-// useEffect(()=>{
 
-// },[])
 
 const onDelete=(id)=>{
 
